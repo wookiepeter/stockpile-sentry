@@ -3,7 +3,7 @@
 # ---- Stage 1: Build Stage ----
 # Use the official Rust image as a builder.
 # TODO: potentially replace with latest or something similar
-FROM rust:1.74-slim-bullseye as builder
+FROM rust:slim-bullseye as builder
 
 # Set the working directory
 WORKDIR /app
