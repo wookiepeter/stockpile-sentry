@@ -6,9 +6,8 @@ Also known as: the Bmat-Signal
 ## Features
 - list stockpiles and their respective codes
 - send pings / messages to discord roles, when one of those stockpiles get's close to expiring
-- those messages can be used to reset that refres timer
+- those messages can be used to reset that refresh timer
 
 ## Out of scope of this project 
 - automatically retrieve stockpile expiry time from foxhole API (impossible AFAIK) 
 - scan and recognize contents of a stockpile (other projects exist for this purpose)
-
