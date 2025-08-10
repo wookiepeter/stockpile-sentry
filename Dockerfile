@@ -13,7 +13,7 @@ FROM chef AS builder
 COPY --from=planner /app/recipe.json recipe.json
 RUN cargo chef cook --recipe-path recipe.json
 COPY . .
-RUN cargo build --bin app
+RUN cargo build --bin stockpile-sentry
 
 # Stage 3 -> Run the image
 FROM debian:bullseye-slim
