@@ -16,7 +16,7 @@ COPY . .
 RUN cargo build --bin stockpile-sentry
 
 # Stage 3 -> Run the image
-FROM debian:bullseye-slim
+FROM debian:trixie-slim
 WORKDIR /app
 # Copy only the compiled binary from the builder stage.
 COPY --from=builder /app/target/debug/stockpile-sentry ./stockpile-sentry
